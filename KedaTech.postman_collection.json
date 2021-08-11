@@ -1,0 +1,524 @@
+{
+	"info": {
+		"_postman_id": "489429c8-21ce-4ee5-84ef-85e60dbebdbc",
+		"name": "KedaTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiI0NDY3ZmVmNWQ2YWI2OWZlY2ZhZWZlMDgyMjY4YzMwZmIxNzBjOGQwYjRjNWFiYTgwYjJhMjcwMjI3MTVhNDA2MTQxZDdlYzAzYzNlYzA0ZSIsImlhdCI6MTYyODY1ODYwNi44MTcxNjksIm5iZiI6MTYyODY1ODYwNi44MTcxOSwiZXhwIjoxNjYwMTk0NjA2LjU4MzE2LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.MaFaUn0KfDGQgIgAV9EbMlcuKcJ9Hq9PQGbOFn5snLsBCbrF0ZuPz9Jt3EvJHX89RFxWCsCV9r_uAvGTvAZEDyeYjWbUwxoHUJbw7j9iuccaiKDdO3Yqoq7cdkNHVOaYJdlRW3C2r87h4VcoJDTQ-0QVySc0h7kPZGpPnuxFmWo0qiijdSccUy0BOKT-o3873NlSjQFTTVUsn_gm9F5NuC11LH4Pdx-oggLs8kQT4xRBzmKmWa8e4vEX9T232db8pOHREKF46pWunZtBAIf1rQYbHtI4rMXksnuzDnf90iHTteKBQ_tRt1imke5lWGhZ652ofO9l-OY1p-6YKqHDBusv53DwlzGphYYOZUzF9speeK-MITFkZDZTm94163U_USy3hhwdcHlq-wsKmP4X-xd2d7CiDjTjWJFEYWSp-zw45y_-BilhZnYOA2nQFa1NYhR6_EOGxCRBZJDINmpk7KNDEXH76pucN5cpLLnun1ZT1fj4dePodpuIuwHCG-jXjSxfgqntopnAHsC_X27jB9OHJanO0dOxr3uddS6lYfWnTHdAMw_E9NinGcSTQ6TuIFcY4MSoajf_GOdhGTL_Q8jK705af45vzgJuAm4CVYYXJ1i9O97-KsUKTih8xNNxzYfZn_JutlCdXKWfduDg-y0CWAbYQByEm-u0FWJC6VA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"staff@gmail.com\",\n    \"password\": \"dummydummy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiI0ZTc5NzA3YWY2Yjg0MjBjNWM4NTc3ZGMzNjc4MDc5OTI2OTJkMzI4YjUxZmQ2ZmQzNmE4Mjg0OGY2NGY0YmQzODU0YTc2ODAxZGI4MjY0MiIsImlhdCI6MTYyODY2MDA5MC40MTMzNzIsIm5iZiI6MTYyODY2MDA5MC40MTM0MDQsImV4cCI6MTY2MDE5NjA5MC4zNjE2NSwic3ViIjoiMSIsInNjb3BlcyI6W119.iga_Ld4gqww5W0AKN3Mu4gETNW-OaMMYfdOk2Kj2HTuiCHqHz8aao0jymtdZT_cIlVSzFKI8H9zuSajt5kx2uc3FfgdOZntcJfuP9Qd9XZN_wDnwhtOe2kO8etlsPjtDzLG5Dk5SdVvaDtwrBDoUVDQpgQQdNMvXwKW_uXOCUJNaFUnDtN0_cLVDfoK_--ufzHwcjUlL6O5oMnnZPdak_dTQGBpQnmif-GKXfMrwwHqq-_em7PmEu6OLscROnRjTRqBQL26DDnl1L8NfFDK10E4vACIhosrBsR0tKESMdPuh_ean3rkayP3NifjvMuIJjIJ-muvTfE2vHd4WC4a_Gm8a2KRD1OxcKlIUbfACJLitA0s6h-iHYvFKWUr_kgmNAKJDioJ9CYEF2Dca_SfQQm7jsTfvlqgJt7tG8bm4gzZZRfeO4SXAHuuB6i258JbzRNaRTJ2TTvrm8txkUcY4-1X8-hLBPLm8AZJMK6I6JjCcdL9x4JyrKLEnkkFXXdaG4iQBXdeb3dWcE4lowDiI8vSaqWqZYSkoTSZty3i6whrcR73zo4H8O5SDOtYJVH4UUpb0qWqWOCOGbF11AGqfoQhX9xxLzlgeJkeXWtYlsQ3xZrzql9pAUdzP6LVUfIsCz9_fHIhnZxyb_mQHx63SNB0jiX_l6J3_5UQZYr-6PCM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"customer@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiI0NDY3ZmVmNWQ2YWI2OWZlY2ZhZWZlMDgyMjY4YzMwZmIxNzBjOGQwYjRjNWFiYTgwYjJhMjcwMjI3MTVhNDA2MTQxZDdlYzAzYzNlYzA0ZSIsImlhdCI6MTYyODY1ODYwNi44MTcxNjksIm5iZiI6MTYyODY1ODYwNi44MTcxOSwiZXhwIjoxNjYwMTk0NjA2LjU4MzE2LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.MaFaUn0KfDGQgIgAV9EbMlcuKcJ9Hq9PQGbOFn5snLsBCbrF0ZuPz9Jt3EvJHX89RFxWCsCV9r_uAvGTvAZEDyeYjWbUwxoHUJbw7j9iuccaiKDdO3Yqoq7cdkNHVOaYJdlRW3C2r87h4VcoJDTQ-0QVySc0h7kPZGpPnuxFmWo0qiijdSccUy0BOKT-o3873NlSjQFTTVUsn_gm9F5NuC11LH4Pdx-oggLs8kQT4xRBzmKmWa8e4vEX9T232db8pOHREKF46pWunZtBAIf1rQYbHtI4rMXksnuzDnf90iHTteKBQ_tRt1imke5lWGhZ652ofO9l-OY1p-6YKqHDBusv53DwlzGphYYOZUzF9speeK-MITFkZDZTm94163U_USy3hhwdcHlq-wsKmP4X-xd2d7CiDjTjWJFEYWSp-zw45y_-BilhZnYOA2nQFa1NYhR6_EOGxCRBZJDINmpk7KNDEXH76pucN5cpLLnun1ZT1fj4dePodpuIuwHCG-jXjSxfgqntopnAHsC_X27jB9OHJanO0dOxr3uddS6lYfWnTHdAMw_E9NinGcSTQ6TuIFcY4MSoajf_GOdhGTL_Q8jK705af45vzgJuAm4CVYYXJ1i9O97-KsUKTih8xNNxzYfZn_JutlCdXKWfduDg-y0CWAbYQByEm-u0FWJC6VA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_type_id\": 2,\n    \"email\": \"satff1@gmail.com\",\n    \"full_name\": \"Staff 1\",\n    \"nick_name\": \"S1\",\n    \"phone\": \"1234567890\",\n    \"password\": \"dummydummy\",\n    \"password_confirmation\": \"dummydummy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Membership",
+			"item": [
+				{
+					"name": "View Customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiJlNDE1NzY4NGQ5NTc2NjEyZmQwOGYzM2VmNmNlOTgyMWQ2ZjE3MTA2ZWMyY2IwZGI3MDhiZWRhMWEyNTRiNmU0ZjQ3OGUxMjI0NDdlYjMwZCIsImlhdCI6MTYyODY2MjM2NS42ODg5MjgsIm5iZiI6MTYyODY2MjM2NS42ODg5NDUsImV4cCI6MTY2MDE5ODM2NS40MzY0MDIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.mLJfrnMdAeY_6P3f0tyjYpwYu1Tt4xxgnQRfYomqQG2sH1lj10PQ-NbC1SvVed9hXTOupczxYSGBGyuSyxY5M56i7oENBfGoW_67MUR1mDNwG6B0V-UcIMyisVxh7pr11sgVq72VfIFwEufmQ8ADMAL_tjmraz8CLBkNh25XZUNHl2sxt_5Lf-c-66TdlCUIfBxq8-ZluAMVfgosmiRWpDrGfJiRgMLtXLbNanHLfyDgJJlOIa_roz7eVcPf9uB__-btdgklTNzyavH3MbQzakP-vTTcajb6Ovfs4V6MrvaxTHvk8zsmSwsg-UMyy6YUMNQp8gurw-px9WL41gtbzctc4LXE5RfFQLltY-i8EK9Ms9M_R985iakc8FbtgVcVI-PheBs7_6z9fBD-8MWq3uSEk39c0W3YeM1tu5XEvd5FTIfkGJW0QlqaVjCg7jRpV5xYLkXVcnU6tu53tv-5IyQ5Jz-Rrt1Y-cnob2tLS4K0DPEsasRbta8fDPFOz9pJZMgy_0ETTej94S5KL4qatordQyyu26qDD_20D4-RNbMjqcZQsoAe5os2doyd4ISjmLOkaUu-EPmVXDfpB6JwmuFqDdOs8AjAngDh5cFEwjIJWMmBFuTFT9SnhIV-B3aQ0fxZhuGTQSuFtLZ12Ch_RgWYJLmyaLGUv6SoHeasm80",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/customer/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiIyNmE1MDZkZTY1YmZmZjM5NGQ0MzIyMzVhYjczZWZjNmY1MjdmODc3NGNmOWQyOTkxMGY3OTU5MGI3N2FjNzBlMjgwOTY0NThiMDM2YjFjOCIsImlhdCI6MTYyODY2MjUwOS4wMTMyNzQsIm5iZiI6MTYyODY2MjUwOS4wMTMzMDQsImV4cCI6MTY2MDE5ODUwOC45NDk1NzcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.rK10ckWwBtVf0wq_XYC-z-YciswQcuF7WVUmMgTpm_uHyUEnpiEoBFC5Gmk7aPxY_DlU9JlljVwINwuV359MmiYcdrGng59UD-SUlC7yvSvRQHW-o7xY0uxdNc9rUj2xPs8zwZIQkHhYwgDWMkfr5Zm_X_vVwt0qMbVX18hAilWxuVAJcr9zsZMJHXhV8fmeHTmtX8vxkhE7SsYzBlxVqjuh6gk6KTMDl7i9Hum_3rzU33M06DVM67SggJL3BrL_hHkeClf_k6TsiDH2YAJA7SSAeyX3vK_ThXHE3PK8lwxlMBS-BdrOaJJbICJLrQF2jg9Euwok59v6AwFOqwUlfAJfuwj0Bz8BrN3-uzSU23BLPzg2oO_I5mr9upzvkhBzCrrDMZDLSUvKC7XdbEIBE5hYQREHX-wVfel3jsIO7jhtMoHhUaIv1Lx01HvidmXHnClyD4TnYsNOQ1Ogs69p1pDqpi6mYO-nZVXaU1qS7H2GrfP8pie-V-hje0TfQTmY9NP_HOSdXtDGvuvFmmUCe8B2rQuJ1V24EWz3z-n7h7C60QecmoYcI7Ls0NT3R3yVWonqV2SC15-40IO81-RuZ9GxAsZFfWonZ8h6ZBnPzBGm1NmsbkfAYtZnaZWqqOMI4-pPF7f5Ham-SWkldu9xdVukm_dkr7h6sMVkLJ2jyJk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/customer/delete/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiJmYzJlZTZlNTM1NWE2ZDM2NDhlMzExMGE3ZjlhNGFhNDUwN2MxODZkNTUwODIwYzY0YmRhNzUzZTU3ZDAxZjJmNDliMTdiY2NlMWU4OTJlOCIsImlhdCI6MTYyODY2Mjc3OS41MTg4MzEsIm5iZiI6MTYyODY2Mjc3OS41MTg4OCwiZXhwIjoxNjYwMTk4Nzc5LjQxMTYyMSwic3ViIjoiMiIsInNjb3BlcyI6W119.XL8pWhMyIwJe4KFuCpQl2PHwLiLRNBgVIkQD6M6rtYWL7PSg3alZKmH2wT8LTxYbpYHv4jKBF9UzJR5XYm7sVGSsfm-P5PD--0FzVXQFFDzE4wcUsqDGH7DOSxsKpNIYm4nMOUaHVCO4q1XJB0KUFiHfBo0d9L0PadLIlxeuf1ILJb_4PBer0S6d7Fwg_I01ROx3bX5rQR6jGz_JwI3O54yd7m1E-BmDMRR9fcfvXuLJbnszTheupAcXKDBpCpW1cI2mXPHqgBCXH1q9_4XoYAbRfoBylhmjgHHhbHcd8VCQtQRUwr1GxRModpIs2s6vBSkPyFMq5hOH-BooqdCmYJm8vzOw3HWQq9fCjAEE0JLOUXfQcQO9CgC_F79Gm13OFYVEjcjlEG-6Uyz9ON1zs0uFyD0IgQgW5WIwUJMih525PB_F0JTPA0A3dmIhTPrEsWU3fDS2NnKlF2MikiJoAfV5oSAqVWfhZ2uWc44QTArI37nqHYGXfJhCzvUt7YHix1ZDd8A2bhG4bYyePSWBCKEP_mOCIoun_OTE_mjYOqIIQZrFJeo0DHv0MxhFMl2rbZfM2HWicqAN1KU1vEz9nJQTWbXKg_GQUVAiQXIo8o6CwqLYaAJmjD-lP5p0pwUDTUt6nLnHTwFxEAm300omhIoGE1YXwd4NCzhzaz61CCI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ids\": \"3,4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/customer/deletes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"deletes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Own Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiJhMTBkNzcwMDc0NTIxYTllN2FiNTQ5M2Q5N2IyODMzN2UxYWRkNTUyNWY2YWFkYTM3MTJlN2NkYjBjOTE5Y2U2NzJiNjU2NDk4MmFjYWE3OCIsImlhdCI6MTYyODY2MTA3Mi4zNTU1MiwibmJmIjoxNjI4NjYxMDcyLjM1NTU1MSwiZXhwIjoxNjYwMTk3MDcyLjIxNDkwMywic3ViIjoiMSIsInNjb3BlcyI6W119.ErGSQgF2NBH_geXB6v65Gr1oKU8HkBg1e3cNazokPddJQWAF7H7InDY6D10VgCZiI7Okkm1UBZTIb7umq6dbDcGQpBXbQLmFsWKfL10WG6vnYugbj5JkpcnpBVbNWweoYPgFB_JFDJjM0gcYS-FKvZQ6QSa58-BVCWbMk__W0Vdi01QcO09Xw6_pEAAqy802lQ4ugO_TOLkFudufEnw1rj_jHaaYcduz7ZojmToF6d7wV7H4WSxieruq5UKgkAG73dz_wTHHs-dWWaFQtoX7YiHGg3rah3MmuGqKWmlUFuOpm7_JOUG3NxvCAGnNKEm4mQJpP_LG4OBus9YyY7pk0XvCxFl2O6Jl_T4dlnG_wUUi8Uqy6lWmZ4pViBvx-0MpZ1X6vjMvg8efcNmS1luNHkw3NmTmnqJopSKHkUFCE5CZbD1ZejAIdkMA0gx5cSWr9j1uxJOuIePfKZ4x1336BQlN_1TarU3eJrXazNA03KSCGgRAZUrSV8umoaVqfr1mdAGO6cquzli40xsKN1H6A-JDu7gUchkgSCFCh40KM7_oPCd9e6tupVhOIQPW6x2W83vdctrHXAFWgDrPEul4D2hiM6J6RMIkwElAVGv4qpgqifXn04OMK2L3UrDcCh2lp45mcZCYBhJxEksRcosxFmKt-x9uiJVn6vB2dmQWfCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"new_password\": null,\n    \"new_password_confirmation\": null,\n    \"full_name\": \"Customer\",\n    \"nick_name\": \"C\",\n    \"phone\": \"1234567890\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/profile/update/me",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"profile",
+								"update",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"item": [
+				{
+					"name": "View Own Messages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiJmYzJlZTZlNTM1NWE2ZDM2NDhlMzExMGE3ZjlhNGFhNDUwN2MxODZkNTUwODIwYzY0YmRhNzUzZTU3ZDAxZjJmNDliMTdiY2NlMWU4OTJlOCIsImlhdCI6MTYyODY2Mjc3OS41MTg4MzEsIm5iZiI6MTYyODY2Mjc3OS41MTg4OCwiZXhwIjoxNjYwMTk4Nzc5LjQxMTYyMSwic3ViIjoiMiIsInNjb3BlcyI6W119.XL8pWhMyIwJe4KFuCpQl2PHwLiLRNBgVIkQD6M6rtYWL7PSg3alZKmH2wT8LTxYbpYHv4jKBF9UzJR5XYm7sVGSsfm-P5PD--0FzVXQFFDzE4wcUsqDGH7DOSxsKpNIYm4nMOUaHVCO4q1XJB0KUFiHfBo0d9L0PadLIlxeuf1ILJb_4PBer0S6d7Fwg_I01ROx3bX5rQR6jGz_JwI3O54yd7m1E-BmDMRR9fcfvXuLJbnszTheupAcXKDBpCpW1cI2mXPHqgBCXH1q9_4XoYAbRfoBylhmjgHHhbHcd8VCQtQRUwr1GxRModpIs2s6vBSkPyFMq5hOH-BooqdCmYJm8vzOw3HWQq9fCjAEE0JLOUXfQcQO9CgC_F79Gm13OFYVEjcjlEG-6Uyz9ON1zs0uFyD0IgQgW5WIwUJMih525PB_F0JTPA0A3dmIhTPrEsWU3fDS2NnKlF2MikiJoAfV5oSAqVWfhZ2uWc44QTArI37nqHYGXfJhCzvUt7YHix1ZDd8A2bhG4bYyePSWBCKEP_mOCIoun_OTE_mjYOqIIQZrFJeo0DHv0MxhFMl2rbZfM2HWicqAN1KU1vEz9nJQTWbXKg_GQUVAiQXIo8o6CwqLYaAJmjD-lP5p0pwUDTUt6nLnHTwFxEAm300omhIoGE1YXwd4NCzhzaz61CCI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/chat/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"chat",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All Messages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDFmMWE1NS1mN2Q4LTQ0ZGYtOWRjYi02OTE1MmJkYTZkNjIiLCJqdGkiOiI1YjVlZDIyZjVhZDVhNTdmMzI1MTQyYWJhOWViYzc3Yjc5ZWU0ZDkzNzY1NzAzY2M0NWY3NzY1ODAxNzMwYzI1YzdmZTYxY2QyYWEyZGFhYiIsImlhdCI6MTYyODYxNTQ2OC45NDcyNTYsIm5iZiI6MTYyODYxNTQ2OC45NDcyNzQsImV4cCI6MTY2MDE1MTQ2OC44MzY2NTcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.RTcm2BLDwZHPkOrxbg32f6JQpdMLWk0xnRsMFqotT4hRCPWmcJZusbkf-PXDUioJ3KritY9mHUrXYfMRvNLl-3UePefpWbq7R73vyUR4C03Y_CZP51XVHm7XUCj6s2-WDa1hSwrQRKqllCX-55_-I2pUdHmiXxlA6T_W58mzxuxRqup27aWWQqc0JQk6cDSkzOJShBq-okNeqLrUSgBa9yQzWc0-5jgz1YxdpQAAxA6DPm8dEVkqAJbRYej2PDT8uFEoH45wEtN3XA__CTF52LJz88WDZlPY0ZVWcATmbo4mdPTa5ujS72rfPmlbo3LRXPupQbm_dTIAM9uM9gNawvnT8RyWo4P7BJGDdceBxC8gr0QgptZelA61KjX-JIb7qCTJydM8wtlptoabGVTL_0o5zt82iDdabxBln5DqiCYIt1o3vpE5HWpOM3w_wYYA-C7CSVADwY2LBSo8-c-Ct9NXf1GtY0_rg_8REStU0Y7DxgAfu-eQwMbH8d-v3y-GYhcHjR11qZLFFTCOKRITZFdKpHkV8987XtHhWP0ndmssARAlOT6qotl45tCKi4GDdGQ7DH1Z1jRyG54GKrru48g6htICVrhAngvcNtXLfun3G5QhQ9zVMy0q_aIKhC2y8QR10PFzqlgka2R6PPPQP3XbvT_Jg4QmlEvhTg7JIYs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/chat/me",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"chat",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Message Send",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiJmYzJlZTZlNTM1NWE2ZDM2NDhlMzExMGE3ZjlhNGFhNDUwN2MxODZkNTUwODIwYzY0YmRhNzUzZTU3ZDAxZjJmNDliMTdiY2NlMWU4OTJlOCIsImlhdCI6MTYyODY2Mjc3OS41MTg4MzEsIm5iZiI6MTYyODY2Mjc3OS41MTg4OCwiZXhwIjoxNjYwMTk4Nzc5LjQxMTYyMSwic3ViIjoiMiIsInNjb3BlcyI6W119.XL8pWhMyIwJe4KFuCpQl2PHwLiLRNBgVIkQD6M6rtYWL7PSg3alZKmH2wT8LTxYbpYHv4jKBF9UzJR5XYm7sVGSsfm-P5PD--0FzVXQFFDzE4wcUsqDGH7DOSxsKpNIYm4nMOUaHVCO4q1XJB0KUFiHfBo0d9L0PadLIlxeuf1ILJb_4PBer0S6d7Fwg_I01ROx3bX5rQR6jGz_JwI3O54yd7m1E-BmDMRR9fcfvXuLJbnszTheupAcXKDBpCpW1cI2mXPHqgBCXH1q9_4XoYAbRfoBylhmjgHHhbHcd8VCQtQRUwr1GxRModpIs2s6vBSkPyFMq5hOH-BooqdCmYJm8vzOw3HWQq9fCjAEE0JLOUXfQcQO9CgC_F79Gm13OFYVEjcjlEG-6Uyz9ON1zs0uFyD0IgQgW5WIwUJMih525PB_F0JTPA0A3dmIhTPrEsWU3fDS2NnKlF2MikiJoAfV5oSAqVWfhZ2uWc44QTArI37nqHYGXfJhCzvUt7YHix1ZDd8A2bhG4bYyePSWBCKEP_mOCIoun_OTE_mjYOqIIQZrFJeo0DHv0MxhFMl2rbZfM2HWicqAN1KU1vEz9nJQTWbXKg_GQUVAiQXIo8o6CwqLYaAJmjD-lP5p0pwUDTUt6nLnHTwFxEAm300omhIoGE1YXwd4NCzhzaz61CCI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"channel\": \"customer\",\n    \"messages\": \"test 1 test 1 test 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/chat/send",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"chat",
+								"send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "View All Feedback",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Feedback Send",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDIwMjkyYi01OTI4LTQ5NzgtOTYzMS05NTFkN2QxNDViOTYiLCJqdGkiOiJjNDgwNzFjNmJhNzI1NzJmMGFhMDFiMzk1OGFjNzFhYjczMWQxNzU2NTEzNzhiYzUyM2UwMjFiMDhjOWQxOThiZTdkMjZhZjY0YjQ4OTMyMCIsImlhdCI6MTYyODY2MzYyNi4xMjkzMjYsIm5iZiI6MTYyODY2MzYyNi4xMjkzNTMsImV4cCI6MTY2MDE5OTYyNi4wMTA2MTksInN1YiI6IjEiLCJzY29wZXMiOltdfQ.GFA4QU4LzsblKy8IxvKqjydz58s2TvMZKUWEXHWZ_5lulIZcbLsRTvUmBHlKBexdVVq2yW0w8O_k8s5uNqeI_iX-pEVd8cMF0xPYyBFJOZ1JhJEETMZB0useqn5erOb5HfKld4CPZUpjkRszo3JBUBycVY1nJByZap6kZ_EY7E2zrck3_Gj2FZM7VEJj2SV2uA1tofeL0_AObGH_ZU0SzIVhz77cfsb2DsCq-Tdw5FqYE_qH0fsO5RszfMKQ0rsA9bztRpBEQgOMQgjtWGmhbSbJwKyrRanfNksPFPuakr_AbytgrdfctIvIw-YoawwC6XdMP4vZiBRt5fj6YLb7-Et2ETDLnLDC7VVNdJ9pAOKmJ8Xag2s-gqcGL0B2ktrxn_WIV0_hVSDj92yy0zHYdC3zQs279k1DfpA6h1O14wZYcnisimITOOSmovp_JH3VWXF0OBkRkNDWWioZTzIFVMJHv5E9Pq9I5BcOZhcQjX4KmYayJySltjQAkjOF5SzqpGTN5YS_DJ4RwhTtXvqE3WE5xUhDZ-kqbgO0KZTAMmETbGnmExXjm6pGNuf-VDkOuA8r029_ESLPFm3PzknblKL5ZEY5S6Lbulqhv-Ex-0YY2WkWlKGEQZMSRlsu_LeNatAaY5QdoelwlF9BUL7fhgBB2WehYu6pSS5bvbkJDVo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"report\": \"report report report\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/feedback/send",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"feedback",
+								"send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"customer1@gmail.com\",\n    \"full_name\": \"Customer 1\",\n    \"nick_name\": \"C1\",\n    \"phone\": \"1234567890\",\n    \"password\": \"dummydummy\",\n    \"password_confirmation\": \"dummydummy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

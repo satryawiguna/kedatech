@@ -1,0 +1,12 @@
+1. Bubble sort
+   - Average and worst case time complexity is n^2 when the array is reverse sorted
+   - Best case time complexity is n when array is already sorted
+
+2. Selection sort
+   Best, average and worst case time complexity is n^2 which is dependent of distribution of data
+   
+3. Merge sort
+   Best, average and worst case time complexity is nlogn which is dependent of distribution of data
+   
+4. Heap sort
+   Best, average and worst case time complexity is nlogn which is dependent of distribution of data
