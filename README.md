@@ -1,3 +1,14 @@
+<h1> Setup Initial</h1>
+1. Clone the project source
+2. Run Composer Install
+3. Adjust some value in enviroment file i.e
+   APP_URL, DB_CONNECTION, DB_DATABASE, DB_USERNAME, DB_PASSWORD, LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT & LARAVEL_WEBSOCKETS_SSL_LOCAL_PK
+4. Run php artisan migrate
+5. Run php artisan passport:install --uuids
+6. Run php artisan db:seed
+7. Run php artisan websockets:serve
+8. import postman json file "KedaTech.postman_collection.json"
+
 <h1> Laravel Back End Keda Interview Manual</h1>
 ## Guidelines to do the project's
 There are several prerequisite apps/packages before making this project, such as: <br>
